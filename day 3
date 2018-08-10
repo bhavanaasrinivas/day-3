@@ -1,0 +1,31 @@
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int r;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("enter any two numbers");
+    scanf("%d%d",&s.a,&s.b);
+    return s;
+}
+struct sum compute()
+{
+    s.r=s.a+s.b;
+    return s;
+}
+struct sum output()
+{
+    printf("the of is %d",s.r);
+    return s;
+}
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
