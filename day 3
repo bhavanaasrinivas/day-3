@@ -29,3 +29,35 @@ int main()
     compute();
     output();
 }
+******************************************************************************************************************************************
+#include<stdio.h>
+struct sum{
+     float a;
+     float b;
+     float r;
+};
+struct sum s; 
+struct sum input()
+{
+    printf("enter two decimal values");
+    scanf("%f%f",&s.a,&s.b);
+    return s;
+}
+struct sum compute()
+{
+    s.r=s.a+s.b;
+    return s;
+}
+struct sum output()
+{
+    printf("the sum of the values entered is %f",s.r);
+    return s;
+}
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+***************************************************************************************************************************************
