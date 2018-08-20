@@ -4,30 +4,31 @@ struct sum{
     int b;
     int r;
 };
-struct sum s;
+
 
 struct sum input()
 {
+    struct sum s;
     printf("enter any two numbers");
     scanf("%d%d",&s.a,&s.b);
     return s;
 }
-struct sum compute()
+struct sum compute(struct sum s)
 {
     s.r=s.a+s.b;
     return s;
 }
-struct sum output()
+void output(struct sum s)
 {
-    printf("the of is %d",s.r);
-    return s;
+    printf("the sum  is %d",s.r);
+    
 }
 int main()
 {
     struct sum s;
-    input();
-    compute();
-    output();
+    s=input();
+    s=compute(s);
+    output(s);
 }
 ******************************************************************************************************************************************
 #include<stdio.h>
@@ -36,19 +37,20 @@ struct sum{
      float b;
      float r;
 };
-struct sum s; 
+ 
 struct sum input()
 {
+    struct sum s;
     printf("enter two decimal values");
     scanf("%f%f",&s.a,&s.b);
     return s;
 }
-struct sum compute()
+struct sum compute(struct sum s)
 {
     s.r=s.a+s.b;
     return s;
 }
-struct sum output()
+void output(struct sum s)
 {
     printf("the sum of the values entered is %f",s.r);
     return s;
@@ -56,9 +58,9 @@ struct sum output()
 int main()
 {
     struct sum s;
-    input();
-    compute();
-    output();
+    s=input();
+    s=compute(s);
+    output(s);
 }
 ***************************************************************************************************************************************
 #include <stdio.h>
@@ -68,14 +70,15 @@ struct sum{
     int max;
     int min;
 };
-struct sum s;
+
 struct sum input()
 {
+    struct sum s;
     printf("enter two numbers");
     scanf("%d%d",&s.a,&s.b);
     return s;
 }
-struct sum compute()
+struct sum compute(struct sum s)
 {
     if(s.a>s.b)
     {
@@ -89,7 +92,7 @@ struct sum compute()
     }
     return s;
 }
-struct sum output()
+void output(struct sum s)
 {
     if(s.max!=s.min)
     {
@@ -97,14 +100,14 @@ struct sum output()
     }
     else
     printf("both are equal");
-    return s;
+    
 }
 int main()
 {
     struct sum s;
-    input();
-    compute();
-    output();
+    s=input();
+    s=compute(s);
+    output(s);
 }
  ***************************************************************************************************************************************************************************   
 #include <stdio.h>
@@ -115,14 +118,15 @@ struct sum{
     int max;
     int e;
 };
-struct sum s;
+
 struct sum input()
 {
+    struct sum s;
     printf("enter three numbers");
     scanf("%d%d%d",&s.a,&s.b,&s.c);
     return s;
 }
-struct sum compute()
+struct sum compute(struct sum s)
 {
     if(s.a>>s.b && s.a>>s.b)
     {
@@ -137,7 +141,7 @@ struct sum compute()
     return s;
 }
 
-struct sum output()
+void output()
 {
     if ( s.a == s.b && s.b == s.c)
     {
@@ -153,8 +157,8 @@ struct sum output()
 int main()
 {
     struct sum s;
-    input();
-    compute();
-    output();
+    s=input();
+    compute(s);
+    output(s);
 }
 ************************************************************************************************************************************************
